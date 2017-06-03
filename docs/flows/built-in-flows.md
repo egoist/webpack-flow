@@ -2,10 +2,16 @@
 
 Add `filepath` to an entry point, default entry point is `client`.
 
+`flow.entry` is an alias to `flow.entry.append`.
+
 ### entryPoint
 
 Type: `string`<br>
 Default: `client`
+
+## flow.entry.prepend(filepath, [entryPoint])
+
+Like `flow.entry` but it inserts filepath before the first element in the entry point.
 
 <img src="https://ooo.0o0.ooo/2017/06/03/5932770980967.gif" width="100%" />
 
