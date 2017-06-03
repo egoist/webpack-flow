@@ -26,7 +26,7 @@ flow.createConfig([
 ```
 </details><br>
 
-`webpack-flow` is similar to [webpack-blocks](https://github.com/andywer/webpack-blocks) but we're using [webpack-chain](https://github.com/mozilla-rpweb/webpack-chain) instead of [webpack-merge](https://github.com/survivejs/webpack-merge) under the hood. With `webpack-chain` you can manage deep nested webpack config in a predicatable way while `webpack-merge` kind of looks like a black-box to me.
+`webpack-flow` is similar to [webpack-blocks](https://github.com/andywer/webpack-blocks) but we're using [webpack-chain](https://github.com/mozilla-rpweb/webpack-chain) instead of [webpack-merge](https://github.com/survivejs/webpack-merge) under the hood. With `webpack-chain` you can manage deep nested webpack config in a predictable way while `webpack-merge` kind of looks like a black-box to me.
 
 ### flow.createConfig(flows)
 
