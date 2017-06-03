@@ -37,7 +37,7 @@ It creates a webpack-chain instance, say `config`, and passes it through each fl
 An example flow which defines some constants:
 
 ```diff
-+ function defineConstants(contants) {
++ function defineConstants(constants) {
 +   return context => {
 +     context.config.plugin('define-constants')
 +       .use(context.webpack.DefinePlugin, [stringifyObjValue(constants)])
