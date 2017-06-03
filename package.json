@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "webpack-flow-monorepo",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "EGOIST <0x142857@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-rem": "^3.1.0",
+    "lerna": "^2.0.0-rc.5"
+  },
+  "scripts": {
+    "test": "lerna bootstrap && lerna run test"
+  },
+  "eslintConfig": {
+    "extends": "rem"
+  }
+}

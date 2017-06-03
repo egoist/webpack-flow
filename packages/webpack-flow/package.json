@@ -1,0 +1,42 @@
+{
+  "name": "webpack-flow",
+  "version": "0.0.0",
+  "description": "Composable webpack config.",
+  "repository": {
+    "url": "egoist/webpack-flow",
+    "type": "git"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "jest --env node"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^2.6.1",
+    "webpack-chain": "^3.3.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.5.1",
+    "jest": "^20.0.4"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  }
+}
