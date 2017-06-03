@@ -12,8 +12,6 @@
 flow.createConfig([
   flow.entry('./src/index.js'),
   flow.babel(),
-  flow.postcss(),
-  flow.sass(),
   flow.env('production', [
     flow.output('./dist/[name].[chunkhash].js', {
       publicPath: '/my/cdn/'
