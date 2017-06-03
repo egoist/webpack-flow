@@ -49,6 +49,12 @@ Options for `babel-loader`.
 
 <img src="https://ooo.0o0.ooo/2017/06/03/5932770980967.gif" width="100%" />
 
+## flow.buble(loaderOptions)
+
+Same as `flow.babel` but use `buble-loader`.
+
+<img src="https://ooo.0o0.ooo/2017/06/03/5932770980967.gif" width="100%" />
+
 ## flow.defineConstants(constants)
 
 ### constants
