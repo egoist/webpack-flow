@@ -1,11 +1,11 @@
 const path = require('path')
 const webpack = require('webpack')
 const Config = require('webpack-chain')
-const flows = require('./flows')
+const builtInflows = require('./flows')
 
 function createConfigInstance(flows) {
   const config = new Config()
-  const context = Object.assign({ config, webpack }, flows)
+  const context = Object.assign({ config, webpack }, builtInflows)
   flows.forEach(flow => flow(context))
   return config
 }
@@ -20,5 +20,5 @@ module.exports = Object.assign(
     createConfig,
     webpack
   },
-  flows
+  builtInflows
 )
