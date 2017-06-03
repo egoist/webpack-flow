@@ -13,12 +13,12 @@ flow.createConfig([
   flow.entry('./src/index.js'),
   flow.babel(),
   flow.env('production', [
-    flow.output('./dist/[name].[chunkhash].js', {
+    flow.dest('./dist/[name].[chunkhash].js', {
       publicPath: '/my/cdn/'
     })
   ]),
   flow.env('development', [
-    flow.output('dist/[name].js')
+    flow.dest('dist/[name].js')
   ])
 ])
 ```
