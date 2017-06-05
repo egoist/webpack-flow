@@ -24,6 +24,13 @@ module.exports = flow.createConfig([
 
 #### options
 
+##### test
+
+Type: [`Condition`](https://webpack.js.org/configuration/module/#condition) <br>
+Default: `/\.css$/`
+
+File matcher.
+
 ##### extract
 
 Type: `boolean`<br>
@@ -44,6 +51,13 @@ Type: `boolean`<br>
 Default: `true`
 
 Enable sourceMap.
+
+##### cssModules
+
+Type: `boolean`<br>
+Default: `undefined`
+
+Enable CSS modules.
 
 ##### preLoader
 

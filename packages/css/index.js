@@ -4,12 +4,14 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = function(
   {
+    test = /\.css$/,
     hash = isProd,
     extract = isProd,
     sourceMap = true,
     loaderOptions,
     preLoader,
-    fallbackLoader
+    fallbackLoader,
+    cssModules
   } = {}
 ) {
   return ({ config }) => {
@@ -23,7 +25,7 @@ module.exports = function(
     ])
 
     const ruleCSS = config.module.rule('css')
-    ruleCSS.test(/\.css$/)
+    ruleCSS.test(test)
 
     const styleLoader = Object.assign(
       {
@@ -35,17 +37,26 @@ module.exports = function(
       fallbackLoader
     )
 
+    const cssLoaderOptions = {
+      sourceMap,
+      autoprefixer: false
+    }
+
+    if (cssModules) {
+      Object.assign(cssLoaderOptions, {
+        modules: true,
+        importLoaders: 1,
+        localIdentName: '[name]__[local]___[hash:base64:5]'
+      })
+    }
+
+    Object.assign(cssLoaderOptions, loaderOptions)
+
     let uses = [
       styleLoader,
       {
         loader: 'css-loader',
-        options: Object.assign(
-          {
-            sourceMap,
-            autoprefixer: false
-          },
-          loaderOptions
-        )
+        options: cssLoaderOptions
       }
     ]
 
