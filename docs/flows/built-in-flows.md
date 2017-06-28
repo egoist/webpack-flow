@@ -92,6 +92,8 @@ An array of flows.
 
 Apply `UglifyJsPlugin`.
 
+<img src="https://ooo.0o0.ooo/2017/06/03/5932770980967.gif" width="100%" />
+
 ## flow.merge(webpackConfig)
 
 Directly merge it into base webpack config, it's supposed to be put at the end of your flows.
