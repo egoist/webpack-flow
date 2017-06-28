@@ -72,7 +72,7 @@ Add flows in specific condition.
 
 ### condition
 
-Type: `boolean`, `string`, `function`<br>
+Type: `boolean` `string` `function`<br>
 Required: `true`
 
 - `boolean`: add flows when it's `true`.
@@ -81,10 +81,10 @@ Required: `true`
 
 ### flows
 
-Type: `Array<flow>`<br>
+Type: `Array<flow>` `function`<br>
 Required: `true`
 
-An array of flows.
+An array of flows or a function that returns flows.
 
 <img src="https://ooo.0o0.ooo/2017/06/03/5932770980967.gif" width="100%" />
 
