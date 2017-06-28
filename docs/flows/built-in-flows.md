@@ -40,6 +40,8 @@ It will be merged into `output` option.
 
 Add `babel-loader` for `.js`, `.jsx` files.
 
+`/node_modules/` is ignored by default.
+
 ### loaderOptions
 
 Type: `Object`<br>
