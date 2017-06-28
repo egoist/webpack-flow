@@ -5,5 +5,6 @@ module.exports = {
   entry: require('./entry'),
   env: require('./env'),
   merge: require('./merge'),
-  defineConstants: require('./define-constants')
+  defineConstants: require('./define-constants'),
+  uglifyjs: require('./uglifyjs')
 }
