@@ -61,7 +61,7 @@ Enable CSS modules.
 
 ##### preLoader
 
-Type: `Object`<br>
+Type: `object` `Array<object>`<br>
 Default: `undefined`
 
 Add a loader before `css-loader`, eg:

@@ -61,7 +61,7 @@ module.exports = function(
     ]
 
     if (preLoader) {
-      uses.push(preLoader)
+      uses = uses.concat(preLoader)
     }
 
     if (extract) {
