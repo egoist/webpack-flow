@@ -10,7 +10,7 @@
     "lerna": "^2.0.0-rc.5"
   },
   "scripts": {
-    "test": "lerna bootstrap && lerna run test"
+    "test": "lerna bootstrap && lerna exec -- npm test"
   },
   "eslintConfig": {
     "extends": "rem"
