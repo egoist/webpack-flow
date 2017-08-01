@@ -19,13 +19,13 @@
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "webpack": "^2.6.1",
     "webpack-chain": "^3.3.0"
   },
   "devDependencies": {
     "babel-jest": "^20.0.3",
     "babel-preset-env": "^1.5.1",
-    "jest": "^20.0.4"
+    "jest": "^20.0.4",
+    "webpack": "^3.4.1"
   },
   "babel": {
     "presets": [
