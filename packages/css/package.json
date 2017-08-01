@@ -1,6 +1,6 @@
 {
   "name": "@webpack-flow/css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -18,7 +18,7 @@
     "babel-preset-env": "^1.5.1",
     "jest": "^20.0.4",
     "webpack": "^2.6.1",
-    "webpack-flow": "^2.0.0-rc.3"
+    "webpack-flow": "^2.0.0"
   },
   "babel": {
     "presets": [

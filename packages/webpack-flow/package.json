@@ -1,6 +1,6 @@
 {
   "name": "webpack-flow",
-  "version": "2.0.0-rc.3",
+  "version": "2.0.0",
   "description": "Composable webpack config.",
   "repository": {
     "url": "egoist/webpack-flow",
